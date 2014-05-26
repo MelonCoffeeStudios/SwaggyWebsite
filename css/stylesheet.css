@@ -1,0 +1,153 @@
+
+
+body{
+    font-family: 'Metrophobic', sans-serif;
+    width:100%;
+    height:100%;
+}
+
+/*
+HEADER STYLES
+*/
+
+#headerLeft{
+    
+}
+
+#headerRight{
+    position:absolute;
+    width: calc(100% - 66px);
+    height: 66px;
+    background: #197165;
+    margin-left:66px;
+    -webkit-transition:background 2s; /* For Safari 3.1 to 6.0 */
+    transition:background 2s;
+}
+
+#headerRight:hover {
+    background: #21A342;
+}
+
+
+
+#menuCol{
+    background-color: #4f4e4c;
+    position:fixed;
+    width:66px;
+    height:66px;
+    -webkit-transition:background 1s; /* For Safari 3.1 to 6.0 */
+    transition:background 1s;
+}
+
+#menuCol:hover {
+    background: #737373;
+}
+
+#menuBarLeft{
+    background-color: #4f4e4c;
+    position:fixed;
+    width:66px;
+    margin-top: 66px;
+    height:calc(100% - 66px);
+}
+
+.absolute{
+    position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+#content{
+    font-family: 'Metrophobic', sans-serif;
+    position: absolute;
+    width: calc(100% - 66px);
+    margin-top: 66px;
+    margin-left: 66px;
+    display: inline;
+}
+
+
+#backgroundOne{
+    border-radius: 0px;
+    background:#672f89;
+    
+    -webkit-transition:border-radius 1s; /* For Safari 3.1 to 6.0 */
+    transition:border-radius 1s;
+}
+
+#backgroundOne:hover {
+    border-radius:100px;   
+}
+
+#backgroundTwo{
+    background:#333333;
+}
+
+#backgroundThree{
+    background:#336699;
+}
+
+#backgroundFour{
+    background: #209DA4;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+EDITED BY JS!!!
+*/
+
+.fullHeight{
+    
+}
+
+.halfHeight{
+    
+}
+
+.quarterHeight{
+    
+}
+
+.quarterWidth{
+    
+}
+
+.threeQuarterHeight{
+    
+}
+
+.threeQuarterWidth{
+    
+}
+
+.fullWidth{
+    
+}
+
+.halfWidth{
+    
+}
+
+.hangR{
+    float:right;
+}
+
+.hangL{
+    float:left;
+}
