@@ -1,5 +1,4 @@
 
-
 body{
     font-family: 'Metrophobic', sans-serif;
     width:100%;
@@ -79,12 +78,12 @@ HEADER STYLES
     border-radius: 0px;
     background:#672f89;
     
-    -webkit-transition:border-radius 1s; /* For Safari 3.1 to 6.0 */
-    transition:border-radius 1s;
+    -webkit-transition:background 1s; /* For Safari 3.1 to 6.0 */
+    transition:background 1s;
 }
 
 #backgroundOne:hover {
-    border-radius:100px;   
+    background:#602462;   
 }
 
 #backgroundTwo{
