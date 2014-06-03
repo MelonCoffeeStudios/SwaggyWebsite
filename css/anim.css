@@ -1,3 +1,151 @@
 
+.h1onHover{
+    color: black;
+    -webkit-transition:color 1s; /* For Safari 3.1 to 6.0 */
+    transition:color 1s;
+    cursor: pointer;
+}
+
+.h1onHover:hover {
+    color: #191919;
+}
+
+.inside{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: inherit;
+    height: inherit;
+}
+
+.inside p {
+    font-size: 30px;
+}
 
 
+.hidden{
+	opacity: 0;
+}
+
+.slideFade {
+	-webkit-animation: slideFade 1s; /* webkit */
+	animation: slideFade 1s;
+	opacity: 1;
+}
+
+@-webkit-keyframes slideFade{
+from {opacity: 0; margin-left: 100px;}
+to {opacity: 1; margin-left: 10px}
+}
+
+/* Standard syntax */
+@keyframes slideFade{
+from {opacity: 0; margin-left: 100px;}
+to {opacity: 1; margin-left: 10px}
+}
+
+.slideFadeOut {
+	-webkit-animation: slideFadeOut 1s; /* webkit */
+	animation: slideFadeOut 1s;
+	opacity: 0;
+}
+
+@-webkit-keyframes slideFadeOut{
+from {opacity: 1; margin-left: 10px;}
+to {opacity: 0; margin-left: 100px}
+}
+
+/* Standard syntax */
+@keyframes slideFadeOut{
+from {opacity: 1; margin-left: 10px;}
+to {opacity: 0; margin-left: 100px}
+}
+
+
+
+.fadeIn{
+    -webkit-animation: fadeIn 5s; /* Chrome, Safari, Opera */
+    animation: fadeIn 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn{
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn{
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+.menuIn {
+	-webkit-animation: menuIn 1s; /* webkit */
+	animation: menuIn 1s;
+	left: 0px; 
+	box-shadow: 0px 0px 30px black;
+}
+
+@-webkit-keyframes menuIn{
+from  {left:-300px;box-shadow: 0px 0px 0px black;}
+to    {left:0px;box-shadow: 0px 0px 30px black;}
+}
+
+/* Standard syntax */
+@keyframes menuIn{
+from  {left:-300px;box-shadow: 0px 0px 0px black;}
+to    {left:0px;box-shadow: 0px 0px 30px black;}
+}
+
+.menuOut {
+	-webkit-animation: menuOut 1s; /* webkit */
+	animation: menuOut 1s;
+	left: -300px;
+	box-shadow: 0px 0px 0px black;
+}
+
+@-webkit-keyframes menuOut{
+from  {left:0px;box-shadow: 0px 0px 30px black;}
+to    {left:-300px;box-shadow: 0px 0px 0px black;}
+}
+
+/* Standard syntax */
+@keyframes menuOut{
+from  {left:0px;box-shadow: 0px 0px 30px black;}
+to    {left:-300px;box-shadow: 0px 0px 0px black;}
+}
+
+
+
+
+.fadeSOut {
+	-webkit-animation: fadeSOut 1s; /* webkit */
+	animation: fadeSOut 1s;
+	opacity: 0;
+}
+
+@-webkit-keyframes fadeSOut {
+from  {opacity: 0.4;}
+to    {opacity: 0;}
+}
+
+@keyframes fadeSOut {
+from  {opacity: 0.4;}
+to    {opacity: 0;}
+}
+
+.fadeSIn {
+	-webkit-animation: fadeSIn 1s; /* webkit */
+	animation: fadeSIn 1s;
+	opacity: 0.4;
+}
+
+@-webkit-keyframes fadeSIn {
+from  {opacity: 0;}
+to    {opacity: 0.4;}
+}
+
+@keyframes fadeSIn {
+from  {opacity: 0;}
+to    {opacity: 0.4;}
+}

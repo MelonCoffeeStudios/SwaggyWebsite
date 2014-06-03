@@ -1,16 +1,24 @@
+@font-face {
+  font-family: 'Metrophobic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metrophobic'), url(font.woff) format('woff');
+}
 
 body{
     font-family: 'Metrophobic', sans-serif;
     width:100%;
     height:100%;
+    position: absolute;
+    overflow-x: hidden;
 }
 
 /*
 HEADER STYLES
 */
 
-#headerLeft{
-    
+h1{
+    font-size: 50px;
 }
 
 #headerRight{
@@ -32,33 +40,74 @@ HEADER STYLES
 #menuCol{
     background-color: #4f4e4c;
     position:fixed;
-    width:66px;
-    height:66px;
-    -webkit-transition:background 1s; /* For Safari 3.1 to 6.0 */
-    transition:background 1s;
+    width:366px;
+    height:100%;
+    z-index: 100;
 }
 
-#menuCol:hover {
-    background: #737373;
+    #shadow{
+        background: black;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+#menuButton {
+    position: absolute;
+    height: 66px;
+    right: 0px;
+    margin-top: 0;
 }
 
-#menuBarLeft{
-    background-color: #4f4e4c;
-    position:fixed;
-    width:66px;
+    #menuButton svg {
+        margin-top: 22px;
+    }
+
+    #menuButton:hover{
+        background: #B2B2B2;
+    }
+
+#personalButton {
+    position: absolute;
+    height: 66px;
+    right: 0px;
     margin-top: 66px;
-    height:calc(100% - 66px);
 }
+
+    #personalButton svg {
+        margin-top: 22px;
+    }
+
+    #personalButton:hover{
+        background: #B2B2B2;
+    }
+
+#hobbyButton {
+    position: absolute;
+    height: 66px;
+    right: 0px;
+    margin-top: 132px;
+}
+
+    #hobbyButton svg {
+        margin-top: 22px;
+    }
+
+    #hobbyButton:hover{
+        background: #B2B2B2;
+    }
+
 
 .absolute{
     position:absolute;
 }
 
-
-
-
-
-
+.center {
+    text-align: center;
+}
 
 
 
@@ -71,6 +120,7 @@ HEADER STYLES
     margin-top: 66px;
     margin-left: 66px;
     display: inline;
+    overflow-x:auto;
 }
 
 
@@ -81,6 +131,17 @@ HEADER STYLES
     -webkit-transition:background 1s; /* For Safari 3.1 to 6.0 */
     transition:background 1s;
 }
+
+    #me{
+        width: 240px;
+        height: 240px;
+        border-radius: 10px;
+        margin-top: 20px;   
+        margin-left: calc(50% - 136px);
+
+            -webkit-animation: fadeIn 3s; /* Chrome, Safari, Opera */
+            animation: fadeIn 3s;
+    }
 
 #backgroundOne:hover {
     background:#602462;   
@@ -96,6 +157,10 @@ HEADER STYLES
 
 #backgroundFour{
     background: #209DA4;
+}
+
+#test{
+    background:#602462; 
 }
 
 
